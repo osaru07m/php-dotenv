@@ -94,11 +94,16 @@ class Dotenv {
      *
      * @param string $key The key of the environment variable.
      * @param mixed $value The value of the environment variable.
+     * @param bool $changeable Whether the environment variable can be changed after being set (default is false).
      * @return void
      */
-    public static function add(string $key, mixed $value): void
+    public static function add(string $key, mixed $value, bool $changeable = false): void
     {
         $key = strtoupper($key);
+
+        if (!$changeable && !is_null(self::get($key))) {
+            return;
+        }
 
         $_ENV[$key] = $value;
         ksort($_ENV);
