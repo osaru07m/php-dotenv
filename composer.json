@@ -1,0 +1,19 @@
+{
+    "name": "osaru07m/php-dotenv",
+    "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+    "minimum-stability": "beta",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Osaru07m\\Dotenv\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "おさる",
+            "email": "osaru07m@gmail.com"
+        }
+    ],
+    "require": {}
+}
