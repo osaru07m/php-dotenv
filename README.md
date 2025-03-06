@@ -87,3 +87,6 @@ Adds or updates an environment variable in `$_ENV`, `$_SERVER`, and the environm
 
 ## Contributing
 Feel free to fork this repository and submit pull requests. Contributions are welcome!
+
+## License
+This library is released under the MIT License. See the [LICENSE.md](./LICENSE.md) file for more details.
